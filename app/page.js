@@ -147,7 +147,7 @@ const CharacterCreator = () => {
             <CardHeader>
               <CardTitle>Step 1: Basic Information</CardTitle>
               <CardDescription>
-                Enter your character's name and choose their type.
+                Enter your character&apos; name and choose their type.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -244,12 +244,12 @@ const CharacterCreator = () => {
             <CardHeader>
               <CardTitle>Step 3: Character Build</CardTitle>
               <CardDescription>
-                Choose your character's build to determine their movement and
-                stamina bonus.
+                Choose your character&apos; build to determine their movement
+                and stamina bonus.
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Label>Choose your character's build</Label>
+              <Label>Choose your character&apos; build</Label>
               <RadioGroup
                 value={character.build}
                 onValueChange={(value) =>
@@ -291,7 +291,7 @@ const CharacterCreator = () => {
             <CardHeader>
               <CardTitle>Step 4: Determine Stats</CardTitle>
               <CardDescription>
-                Rolling for your character's Stamina and Proficiency stats.
+                Rolling for your character&apos; Stamina and Proficiency stats.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -334,7 +334,7 @@ const CharacterCreator = () => {
             <CardHeader>
               <CardTitle>Step 5: Class and Weapon</CardTitle>
               <CardDescription>
-                Choose your character's class and define their weapon.
+                Choose your character&apos; class and define their weapon.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -418,7 +418,7 @@ const CharacterCreator = () => {
             <CardHeader>
               <CardTitle>Step 6: Talents and Passive</CardTitle>
               <CardDescription>
-                Define your character's talents and passive ability.
+                Define your character&apos; talents and passive ability.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -506,7 +506,7 @@ const CharacterCreator = () => {
             <CardHeader>
               <CardTitle>Step 7: Abilities</CardTitle>
               <CardDescription>
-                Define your character's abilities.
+                Define your character&apos; abilities.
               </CardDescription>
             </CardHeader>
             <CardContent>
