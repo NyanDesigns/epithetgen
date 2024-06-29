@@ -127,7 +127,7 @@ const Step4DetermineStats = ({
   return (
     <Card className="w-full max-w-md">
       <CardHeader>
-        <CardTitle>Step 4: Determine Stats</CardTitle>
+        <CardTitle>Step 3: Determine Stats</CardTitle>
         <CardDescription>
           Roll for your character&apos;s Stamina and Proficiency stats.
         </CardDescription>

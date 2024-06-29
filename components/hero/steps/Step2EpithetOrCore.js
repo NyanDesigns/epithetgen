@@ -23,6 +23,7 @@ const Step2EpithetOrCore = ({
   const [rerollsRemaining, setRerollsRemaining] = useState(
     character.rerollsRemaining2 ?? 3
   );
+  const [wordDefinitions, setWordDefinitions] = useState({});
 
   const generateWords = () => {
     const words = [];
@@ -31,6 +32,29 @@ const Step2EpithetOrCore = ({
       words.push(nouns[randomIndex]);
     }
     return words;
+  };
+
+  // Function to fetch the definition of a word
+  const getMeaning = async (word) => {
+    try {
+      const response = await fetch(
+        `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`
+      );
+      const data = await response.json();
+      if (
+        data &&
+        data[0] &&
+        data[0].meanings &&
+        data[0].meanings[0].definitions[0].definition
+      ) {
+        setWordDefinitions((prev) => ({
+          ...prev,
+          [word]: data[0].meanings[0].definitions[0].definition,
+        }));
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   };
 
   useEffect(() => {
@@ -60,6 +84,7 @@ const Step2EpithetOrCore = ({
       epithetOrCoreWord: word,
       rerollsRemaining2: rerollsRemaining,
     }));
+    getMeaning(word); // Fetch the definition of the selected word
   };
 
   // Check if the step is complete (a word has been selected)
@@ -88,8 +113,15 @@ const Step2EpithetOrCore = ({
                   ? "outlinevioletbg"
                   : "outlineviolet"
               }
+              className="flex flex-col h-fit"
             >
               {word}
+              {character.epithetOrCoreWord === word &&
+                wordDefinitions[word] && (
+                  <div className="mt-1 text-[12px] italic leading-5 font-normal text-gray-600 text-foreground text-wrap">
+                    {wordDefinitions[word]}
+                  </div>
+                )}
             </Button>
           ))}
         </div>

@@ -130,7 +130,7 @@ const CharacterCreator = () => {
         );
       case 3:
         return (
-          <Step3CharacterBuild
+          <Step4DetermineStats
             character={character}
             setCharacter={setCharacter}
             handleNextStep={handleNextStep}
@@ -139,7 +139,7 @@ const CharacterCreator = () => {
         );
       case 4:
         return (
-          <Step4DetermineStats
+          <Step3CharacterBuild
             character={character}
             setCharacter={setCharacter}
             handleNextStep={handleNextStep}

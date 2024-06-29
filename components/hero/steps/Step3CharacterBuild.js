@@ -78,7 +78,7 @@ const Step3CharacterBuild = ({
   return (
     <Card className="w-full max-w-md">
       <CardHeader>
-        <CardTitle>Step 3: Character Build</CardTitle>
+        <CardTitle>Step 4: Character Build</CardTitle>
         <CardDescription>
           Choose your character&apos;s build to determine their movement and
           stamina bonus.
@@ -89,7 +89,7 @@ const Step3CharacterBuild = ({
         <RadioGroup
           value={character.build}
           onValueChange={handleBuildChange}
-          className="flex flex-row justify-between my-4 text-rose-700"
+          className="flex flex-row justify-between p-4 my-4 border border-blue-700 rounded-md text-rose-700"
         >
           <div className="flex items-center space-x-2">
             <RadioGroupItem value="svelte" id="svelte" />
