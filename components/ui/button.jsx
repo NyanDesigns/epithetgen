@@ -15,13 +15,15 @@ const buttonVariants = cva(
         outline:
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         outlineviolet:
-          "border w-full border-2 border-violet-400 bg-background hover:bg-accent hover:text-accent-foreground",
+          "border w-full border-blue-700 bg-background hover:bg-accent hover:bg-gradient-to-r from-rose-300/30 to-violet-400/30",
         outlinevioletbg:
-          "border w-full border-2 text-white border-violet-400 bg-foreground hover:bg-accent hover:text-accent-foreground",
+          "border w-full font-bold tracking-wide text-foreground border-blue-700 bg-gradient-to-r from-rose-300/80 to-violet-400/80  hover:bg-accent hover:text-accent-foreground",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         generate:
           "border border-emerald-700 bg-emerald-400/70 text-primary-background hover:bg-emerald-400",
+        generate2:
+          "border border-emerald-700/70 bg-emerald-400/40 text-primary-background hover:bg-emerald-400/70",
         nav: "border border-rose-700 bg-rose-300/70 text-primary-background hover:bg-rose-300",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",

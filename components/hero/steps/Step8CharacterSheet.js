@@ -14,7 +14,7 @@ const Step8CharacterSheet = ({ character, handlePrevStep, handleRestart }) => {
     <Card className="w-full max-w-2xl overflow-hidden bg-white rounded-lg shadow-lg">
       <CardHeader className="text-white bg-gradient-to-r from-purple-500 to-pink-500">
         <CardTitle className="text-3xl font-bold">{character.name}</CardTitle>
-        <CardDescription className="text-lg">
+        <CardDescription className="text-lg text-white">
           {character.type === "epithet" ? "Epithet" : "Core Word"}:{" "}
           {character.epithetOrCoreWord}
         </CardDescription>

@@ -165,7 +165,7 @@ const Step7Abilities = ({
 
         {/* Add ability button */}
         {visibleAbilities < 5 && (
-          <Button onClick={addAbility} className="mb-4">
+          <Button variant="generate2" onClick={addAbility} className="mb-4">
             + Add Ability
           </Button>
         )}

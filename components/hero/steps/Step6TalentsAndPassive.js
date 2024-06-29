@@ -148,34 +148,36 @@ const Step6TalentsAndPassive = ({
 
         {/* Add talent button */}
         {visibleTalents < 5 && (
-          <Button onClick={addTalent} className="mb-4">
+          <Button variant="generate2" onClick={addTalent} className="mb-4">
             + Add Talent
           </Button>
         )}
 
-        <Label htmlFor="passive">Passive Ability</Label>
-        <Input
-          id="passive"
-          value={character.passive.name}
-          onChange={(e) =>
-            setCharacter((prev) => ({
-              ...prev,
-              passive: { ...prev.passive, name: e.target.value },
-            }))
-          }
-          className="mb-2"
-        />
-        <Textarea
-          value={character.passive.description}
-          onChange={(e) =>
-            setCharacter((prev) => ({
-              ...prev,
-              passive: { ...prev.passive, description: e.target.value },
-            }))
-          }
-          placeholder="Passive ability description"
-          className="mb-4"
-        />
+        <div>
+          <Label htmlFor="passive">Passive Ability</Label>
+          <Input
+            id="passive"
+            value={character.passive.name}
+            onChange={(e) =>
+              setCharacter((prev) => ({
+                ...prev,
+                passive: { ...prev.passive, name: e.target.value },
+              }))
+            }
+            className="mb-2"
+          />
+          <Textarea
+            value={character.passive.description}
+            onChange={(e) =>
+              setCharacter((prev) => ({
+                ...prev,
+                passive: { ...prev.passive, description: e.target.value },
+              }))
+            }
+            placeholder="Passive ability description"
+            className="mb-4"
+          />
+        </div>
 
         {/* Updated StepButtons component */}
         <StepButtons

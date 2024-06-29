@@ -60,7 +60,7 @@ const Step1BasicInfo = ({
           onChange={(e) =>
             setCharacter((prev) => ({ ...prev, name: e.target.value }))
           }
-          className="mb-4 font-bold text-red-500"
+          className="mb-4 font-bold text-rose-700"
         />
         <Label>Enter Character Type</Label>
         <div className="flex justify-between gap-4 mb-4">

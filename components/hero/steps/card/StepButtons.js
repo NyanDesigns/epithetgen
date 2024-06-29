@@ -1,8 +1,7 @@
 // components/StepButtons.js
 import { Button } from "@/components/ui/button";
 import { FaDiceD20 } from "react-icons/fa";
-import { RiAiGenerate } from "react-icons/ri";
-import { TbEditCircle } from "react-icons/tb";
+import { TbEditCircle, TbSquareRoundedPlus2 } from "react-icons/tb";
 import { VscDebugRestart } from "react-icons/vsc";
 
 const StepButtons = ({
@@ -49,7 +48,7 @@ const StepButtons = ({
           className="flex flex-row gap-2"
         >
           <>
-            <RiAiGenerate />
+            <TbSquareRoundedPlus2 />
             Generate
           </>
         </Button>

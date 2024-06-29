@@ -85,7 +85,7 @@ const Step2EpithetOrCore = ({
               onClick={() => handleWordSelection(word)}
               variant={
                 character.epithetOrCoreWord === word
-                  ? "default"
+                  ? "outlinevioletbg"
                   : "outlineviolet"
               }
             >

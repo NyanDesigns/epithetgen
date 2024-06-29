@@ -89,7 +89,7 @@ const Step3CharacterBuild = ({
         <RadioGroup
           value={character.build}
           onValueChange={handleBuildChange}
-          className="flex flex-row justify-between mb-4"
+          className="flex flex-row justify-between my-4 text-rose-700"
         >
           <div className="flex items-center space-x-2">
             <RadioGroupItem value="svelte" id="svelte" />
