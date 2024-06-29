@@ -5,8 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Epithet Generator",
-  description: "Generate characters for Epithet Erased: Anime Campaign",
+  title: "Epithet OC Generator",
+  description:
+    "Generate or Create Original Characters (OC) for Epithet Erased: Anime Campaign",
 };
 
 export default function RootLayout({ children }) {
