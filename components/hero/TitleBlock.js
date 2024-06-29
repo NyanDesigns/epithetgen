@@ -1,8 +1,18 @@
+import Image from "next/image";
 export function TitleBlock() {
   return (
     <div className="flex flex-col items-center">
       {/* logo */}
-      <div className="relative w-20 h-20 mb-4 logo" />
+      <Image
+        className="relative mb-4"
+        src="https://cdn.discordapp.com/attachments/764894209286209637/1256532326834372669/Logo_21.png?ex=66811c6b&is=667fcaeb&hm=61dca38cbd434bdacfe76704353fde460233a5ce3d51631703c3b50b8fa7f3cf&"
+        alt="logo"
+        unoptimized
+        width={200}
+        height={100}
+        style={{ width: "auto", height: "auto" }} //Fix CSS error
+        priority
+      />
       {/* heading */}
       <h1 className="text-2xl italic text-center text-slate-300 sm:text-3xl sm:leading-tight">
         Anime Campaign
