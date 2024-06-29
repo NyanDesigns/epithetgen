@@ -189,7 +189,7 @@ const CharacterCreator = () => {
   return (
     <div className="flex flex-col items-center min-w-full min-h-full gap-6 px-4 py-6">
       {/* titleBlock */}
-      {step === 1 && <TitleBlock />}
+      <TitleBlock step={step} />
       {/* step-cards */}
       <div className="flex flex-col items-center justify-center w-full grow">
         {renderStep()}

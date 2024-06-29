@@ -12,15 +12,17 @@ import StepButtons from "../steps/card/StepButtons";
 const Step8CharacterSheet = ({ character, handlePrevStep, handleRestart }) => {
   return (
     <Card className="w-full max-w-2xl overflow-hidden bg-white rounded-lg shadow-lg">
-      <CardHeader className="text-white bg-gradient-to-r from-purple-500 to-pink-500">
+      <CardHeader className="text-foreground bg-gradient-to-r from-violet-400 to-rose-300">
         <CardTitle className="text-3xl font-bold">{character.name}</CardTitle>
-        <CardDescription className="text-lg text-white">
+        <CardDescription className="flex flex-row gap-2 text-lg text-foreground">
           {character.type === "epithet" ? "Epithet" : "Core Word"}:{" "}
-          {character.epithetOrCoreWord}
+          <div className="font-bold tracking-wide">
+            {character.epithetOrCoreWord}
+          </div>
         </CardDescription>
       </CardHeader>
-      <CardContent className="p-6 space-y-6">
-        <div className="grid grid-cols-2 gap-4 text-sm">
+      <CardContent className="p-6 space-y-4">
+        <div className="grid grid-cols-2 gap-2 text-sm">
           <div>
             <strong>Class:</strong> {character.class}
           </div>
@@ -89,6 +91,7 @@ const Step8CharacterSheet = ({ character, handlePrevStep, handleRestart }) => {
             ))}
         </div>
 
+        <Separator />
         <StepButtons
           step={8}
           onEdit={handlePrevStep}

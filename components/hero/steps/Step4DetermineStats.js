@@ -65,7 +65,7 @@ const Step4DetermineStats = ({
 
   const rollDice = (setResult, setRolling, modifier = (x) => x) => {
     let intervalId;
-    const rollDuration = 1000;
+    const rollDuration = 500;
     const intervalDuration = 50;
 
     const startRolling = () => {
@@ -137,7 +137,7 @@ const Step4DetermineStats = ({
           <div>
             <h3 className="mb-2 text-lg font-semibold">Stamina</h3>
             <div
-              className={`text-4xl font-bold mb-2 ${
+              className={`text-4xl text-center font-bold mb-2 ${
                 staminaRolling ? "animate-bounce" : ""
               }`}
             >
@@ -147,7 +147,7 @@ const Step4DetermineStats = ({
           <div>
             <h3 className="mb-2 text-lg font-semibold">Proficiency</h3>
             <div
-              className={`text-4xl font-bold mb-2 ${
+              className={`text-4xl text-center font-bold mb-2 ${
                 proficiencyRolling ? "animate-bounce" : ""
               }`}
             >

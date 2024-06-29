@@ -106,35 +106,41 @@ const Step5ClassAndWeapon = ({
           }
           className="mb-4"
         />
-        <Label htmlFor="weaponDamage">Weapon Damage</Label>
-        <Input
-          id="weaponDamage"
-          type="number"
-          value={character.weapon.damage}
-          onChange={(e) =>
-            setCharacter((prev) => ({
-              ...prev,
-              weapon: {
-                ...prev.weapon,
-                damage: parseInt(e.target.value),
-              },
-            }))
-          }
-          className="mb-4"
-        />
-        <Label htmlFor="weaponRange">Weapon Range</Label>
-        <Input
-          id="weaponRange"
-          type="number"
-          value={character.weapon.range}
-          onChange={(e) =>
-            setCharacter((prev) => ({
-              ...prev,
-              weapon: { ...prev.weapon, range: parseInt(e.target.value) },
-            }))
-          }
-          className="mb-4"
-        />
+        <div className="flex flex-row gap-4">
+          <div className="flex flex-col gap-1">
+            <Label htmlFor="weaponDamage">Weapon Damage</Label>
+            <Input
+              id="weaponDamage"
+              type="number"
+              value={character.weapon.damage}
+              onChange={(e) =>
+                setCharacter((prev) => ({
+                  ...prev,
+                  weapon: {
+                    ...prev.weapon,
+                    damage: parseInt(e.target.value),
+                  },
+                }))
+              }
+              className="mb-4"
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <Label htmlFor="weaponRange">Weapon Range</Label>
+            <Input
+              id="weaponRange"
+              type="number"
+              value={character.weapon.range}
+              onChange={(e) =>
+                setCharacter((prev) => ({
+                  ...prev,
+                  weapon: { ...prev.weapon, range: parseInt(e.target.value) },
+                }))
+              }
+              className="mb-4"
+            />
+          </div>
+        </div>
         <StepButtons
           step={5}
           onPrev={handlePrevStep}
