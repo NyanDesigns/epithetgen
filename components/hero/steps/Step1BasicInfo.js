@@ -49,7 +49,7 @@ const Step1BasicInfo = ({
       <CardHeader>
         <CardTitle>Step 1: Basic Information</CardTitle>
         <CardDescription>
-          Enter your character's name and choose their type.
+          Enter your character&apos;s name and choose their type.
         </CardDescription>
       </CardHeader>
       <CardContent>

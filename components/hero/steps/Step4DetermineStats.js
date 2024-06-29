@@ -129,7 +129,7 @@ const Step4DetermineStats = ({
       <CardHeader>
         <CardTitle>Step 4: Determine Stats</CardTitle>
         <CardDescription>
-          Roll for your character's Stamina and Proficiency stats.
+          Roll for your character&apos;s Stamina and Proficiency stats.
         </CardDescription>
       </CardHeader>
       <CardContent>

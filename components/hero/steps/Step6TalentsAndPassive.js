@@ -99,7 +99,7 @@ const Step6TalentsAndPassive = ({
       <CardHeader>
         <CardTitle>Step 6: Talents & Passive</CardTitle>
         <CardDescription>
-          Define your character's talents and passive ability.
+          Define your character&apos;s talents and passive ability.
         </CardDescription>
       </CardHeader>
       <CardContent>
