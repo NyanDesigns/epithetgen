@@ -1,17 +1,8 @@
-import Image from "next/image";
 export function TitleBlock() {
   return (
     <div className="flex flex-col items-center">
       {/* logo */}
-      <Image
-        className="relative mb-4"
-        src="/logo.svg"
-        alt="Logo"
-        width={150}
-        height={50}
-        style={{ width: "auto", height: "auto" }} //Fix CSS error
-        priority
-      />
+      <div className="relative w-20 h-20 mb-4 logo" />
       {/* heading */}
       <h1 className="text-2xl italic text-center text-slate-300 sm:text-3xl sm:leading-tight">
         Anime Campaign
