@@ -89,7 +89,9 @@ const Step7Abilities = ({
     <Card className="w-full max-w-md">
       <CardHeader>
         <CardTitle>Step 7: Abilities</CardTitle>
-        <CardDescription>Define your character's abilities.</CardDescription>
+        <CardDescription>
+          Define your character&apos;s abilities.
+        </CardDescription>
       </CardHeader>
       <CardContent>
         {/* Render visible abilities */}
