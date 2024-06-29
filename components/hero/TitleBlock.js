@@ -5,10 +5,10 @@ export function TitleBlock() {
       {/* logo */}
       <Image
         className="relative mb-4"
-        src="/logo.png"
+        src="/logo.svg"
         alt="Logo"
-        width={200}
-        height={100}
+        width={150}
+        height={50}
         style={{ width: "auto", height: "auto" }} //Fix CSS error
         priority
       />
