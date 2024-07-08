@@ -18,7 +18,7 @@ export function Disclaimer() {
 
   return (
     <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
-      <AlertDialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+      <AlertDialogContent className="max-w-3xl max-h-full sm:max-h-[80vh] overflow-y-auto">
         <AlertDialogHeader>
           <AlertDialogTitle>Before We Begin...</AlertDialogTitle>
           <AlertDialogDescription>

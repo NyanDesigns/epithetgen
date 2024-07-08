@@ -11,8 +11,8 @@ export function TitleBlock({ step }) {
         <>
           {/* logo */}
           <Image
-            className="relative my-3 max-w-[300px]"
-            src="https://i.ibb.co/T0rBjcQ/Logo-2.png"
+            className="relative my-3 max-w-[250px]"
+            src="https://i.ibb.co/LZYrBtJ/Logo2.png"
             alt="logo"
             unoptimized
             width={100}
