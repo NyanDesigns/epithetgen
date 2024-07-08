@@ -18,6 +18,8 @@ const buttonVariants = cva(
           "border w-full border-blue-700 bg-background hover:bg-accent hover:bg-gradient-to-r from-rose-300/30 to-violet-400/30",
         outlinevioletbg:
           "border w-full font-bold tracking-wide text-foreground border-blue-700 bg-gradient-to-r from-rose-300/80 to-violet-400/80  hover:bg-accent hover:text-accent-foreground",
+        bluebg:
+          " w-full font-bold tracking-wide text-foreground bg-gradient-to-r from-blue-400/80 to-violet-400/80  hover:bg-accent hover:text-accent-foreground",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         generate:

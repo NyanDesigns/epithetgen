@@ -12,6 +12,8 @@ import Step6TalentsAndPassive from "../components/hero/steps/Step6TalentsAndPass
 import Step7Abilities from "../components/hero/steps/Step7Abilities";
 import Step8CharacterSheet from "../components/hero/steps/Step8CharacterSheet";
 
+import { Disclaimer } from "../components/Disclaimer";
+import { Footer } from "../components/Footer";
 import { TitleBlock } from "../components/hero/TitleBlock";
 
 const CharacterCreator = () => {
@@ -187,13 +189,15 @@ const CharacterCreator = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-w-full min-h-full gap-6 px-4 py-6">
+    <div className="flex flex-col items-center min-w-full min-h-full gap-6 mt-6">
+      <Disclaimer />
       {/* titleBlock */}
       <TitleBlock step={step} />
       {/* step-cards */}
-      <div className="flex flex-col items-center justify-center w-full grow">
+      <div className="flex flex-col items-center justify-center w-full px-6 grow">
         {renderStep()}
       </div>
+      <Footer />
     </div>
   );
 };

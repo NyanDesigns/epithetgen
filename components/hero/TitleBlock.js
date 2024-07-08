@@ -11,8 +11,8 @@ export function TitleBlock({ step }) {
         <>
           {/* logo */}
           <Image
-            className="relative my-4 max-w-[300px] sm:max-w-[400px]"
-            src="https://cdn.discordapp.com/attachments/764894209286209637/1256630169628708977/Logo_2.png?ex=6681778b&is=6680260b&hm=b996c32e4148e250255bff550f2b359157810beabe32f15cce52d6d564ec0073&"
+            className="relative my-3 max-w-[300px]"
+            src="https://i.ibb.co/T0rBjcQ/Logo-2.png"
             alt="logo"
             unoptimized
             width={100}
