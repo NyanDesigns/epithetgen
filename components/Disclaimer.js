@@ -1,11 +1,11 @@
 import {
-    AlertDialog,
-    AlertDialogAction,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import { useEffect, useState } from "react";
 
@@ -29,17 +29,17 @@ export function Disclaimer() {
 
               <p>
                 This nifty tool is a <em>fan-made project</em> inspired by
-                "Epithet Erased", Anime Campaign system. We're here to help you
-                bring your characters to life!
+                &quot;Epithet Erased&quot;, Anime Campaign system. We&apos;re
+                here to help you bring your characters to life!
               </p>
 
               <blockquote className="pl-4 italic border-l-4 border-gray-300">
-                <strong>FYI:</strong> We're still in prototype mode, so{" "}
+                <strong>FYI:</strong> We&apos;re still in prototype mode, so{" "}
                 <strong>
                   expect some generalizations and maybe a few quirks along the
                   way
                 </strong>
-                . Detailed stats and perfect accuracy? We're working on it!
+                . Detailed stats and perfect accuracy? We&apos;re working on it!
               </blockquote>
 
               <ol className="list-decimal list-inside">
@@ -51,7 +51,7 @@ export function Disclaimer() {
                   >
                     jelloapocalypse
                   </a>
-                  's "Epithet Erased", please support the{" "}
+                  &apos;s &quot;Epithet Erased&quot;, please support the{" "}
                   <a
                     href="https://www.patreon.com/jelloapocalypse"
                     className="text-blue-500 hover:underline"
@@ -77,8 +77,8 @@ export function Disclaimer() {
 
               <p>
                 <strong>This Webapp credit:</strong> That would be me,{" "}
-                <strong>Nyan Designs</strong>! ✨ If you're enjoying this tool,
-                why not give me a follow? You can find me at{" "}
+                <strong>Nyan Designs</strong>! ✨ If you&apos;re enjoying this
+                tool, why not give me a follow? You can find me at{" "}
                 <a
                   href="https://twitter.com/nyandesigns0"
                   className="text-blue-500 hover:underline"
@@ -88,13 +88,13 @@ export function Disclaimer() {
                 for more creative shenanigans!
               </p>
 
-              <p>Now, let's get creative and have some fun! 🎉</p>
+              <p>Now, let&apos;s get creative and have some fun! 🎉</p>
             </div>
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter className="flex justify-center">
           <AlertDialogAction className="w-full">
-            Let's Create!
+            Let&apos;s Create!
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
